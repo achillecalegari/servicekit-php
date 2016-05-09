@@ -8,26 +8,36 @@
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/customer.css">
 </head>
-<body style="width: 600px: height: 400px;">
+<body>
     
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <p><button class="btn btn-primary btn-lg service-request-btn" data-toggle="modal" data-target="#service-request-modal">Talk to a Representative</button></p>
+      </div>
+    </div>
+
+    
+
+    <!-- Service Request Modal -->
     <div class="modal fade" id="service-request-modal" tabindex="-1" role="dialog" aria-labelledby="service-request-modal-label" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Chiudi</span></button>
-                    <h4 class="modal-title" id="service-request-modal-label">Parla con noi</h4>
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="service-request-modal-label">Talk to a Representative</h4>
                 </div>
                 <div class="modal-body">
                     <form role="form" class="request-form">
                         <div class="form-group">
-                            <label for="customer-name" class="control-label">Il tuo nome:</label>
+                            <label for="customer-name" class="control-label">Your Name:</label>
                             <input type="text" class="form-control customer-name" name="customer_name" required="required">
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
-                    <button type="button" class="btn btn-primary request-submit">Parla con il nostro promoter</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary request-submit">Request a representative</button>
                 </div>
             </div>
         </div>
@@ -41,8 +51,7 @@
             <button type="button" class="btn btn-danger close-button">Cancel</button>
         </div>
         <div class="waiting">
-            <p class="hardware-access">Per favore attiva la tua camera ed il tuo Microfono.</p>
-            <p class="representative">Un rappresentante si metterà in contatto con te quanto prima...</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bQtKOJP--uA" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
 
