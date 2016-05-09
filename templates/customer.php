@@ -32,7 +32,7 @@
                         <div class="form-group">
                             <label for="customer-name" class="control-label">Your Name:</label>
                             <input type="text" class="form-control customer-name" name="customer_name" required="required">
-                            
+
                         <div class="form-group">
                             <label for="problem-text" class="control-label">Tell us about your problem:</label>
                             <textarea class="form-control problem-text" name="problem_text" required="required"></textarea>
@@ -56,7 +56,7 @@
             <button type="button" class="btn btn-danger close-button">Cancel</button>
         </div>
         <div class="waiting">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/bQtKOJP--uA" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bQtKOJP--uA" frameborder="0" autoplay="yes" allowfullscreen></iframe>
         </div>
     </div>
 
