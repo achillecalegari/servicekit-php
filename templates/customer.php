@@ -56,7 +56,7 @@
             <button type="button" class="btn btn-danger close-button">Cancel</button>
         </div>
         <div class="waiting">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/bQtKOJP--uA" frameborder="0" autoplay="yes" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/bQtKOJP--uA?autoplay=1" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
 
