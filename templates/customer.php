@@ -32,6 +32,11 @@
                         <div class="form-group">
                             <label for="customer-name" class="control-label">Your Name:</label>
                             <input type="text" class="form-control customer-name" name="customer_name" required="required">
+                            
+                        <div class="form-group">
+                            <label for="problem-text" class="control-label">Tell us about your problem:</label>
+                            <textarea class="form-control problem-text" name="problem_text" required="required"></textarea>
+                        </div>
                         </div>
                     </form>
                 </div>
