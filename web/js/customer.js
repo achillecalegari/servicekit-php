@@ -69,7 +69,11 @@
     var validationRequirements = {
       '.customer-name': {
         maxLength: 50,
+        required: true},
+      '.problem-text': {
+        maxLength: 200,
         required: true
+
       }
     };
 

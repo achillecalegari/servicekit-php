@@ -9,14 +9,8 @@
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/customer.css">
 </head>
-<body>
-    
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <p><button class="btn btn-primary btn-lg service-request-btn" data-toggle="modal" data-target="#service-request-modal">Talk to a Representative</button></p>
-      </div>
-    </div>
+<body style=" margin: 0; padding: 0">
+<button class="service-request-btn" data-toggle="modal" data-target="#service-request-modal" style="margin: 0; background: transparent; padding: 0; border: none;"><img src="/css/500x400.jpg" style="width: 100%; max-width: 500px;"></button>
 
     
 
@@ -24,16 +18,17 @@
     <div class="modal fade" id="service-request-modal" tabindex="-1" role="dialog" aria-labelledby="service-request-modal-label" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Chiudi</span></button>
-                </div>
                 <div class="modal-body">
                     <form role="form" class="request-form">
                         <div class="form-group">
                             <label for="customer-name" class="control-label">Il tuo nome:</label>
                             <input type="text" class="form-control customer-name" name="customer_name" required="required">
-
                         </div>
+                        <div class="form-group">
+                            <label for="problem-text" class="control-label">Tell us about your problem:</label>
+                            <textarea class="form-control problem-text" name="problem_text" required="required"></textarea>
+                        </div>
+
                     </form>
                 </div>
                 <div class="modal-footer">
