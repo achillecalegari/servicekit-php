@@ -108,7 +108,6 @@
     this.$subscriber = this.$panel.find('.subscriber');
     this.$waitingHardwareAccess = this.$panel.find('.waiting .hardware-access');
     this.$waitingRepresentative = this.$panel.find('.waiting');
-    this.$onlinecomponents = this.$panel.find('.toshow');
     this.$closeButton = this.$panel.find('.close-button');
 
     // Do this asynchronously so that the 'open' event happens on a separate turn of the event loop
@@ -148,7 +147,6 @@
   ServicePanel.prototype._cleanUp = function() {
     this.$waitingHardwareAccess.hide();
     this.$waitingRepresentative.hide();
-    this.$onlinecomponents.show();
     this.$closeButton.off().text('Cancel');
 
     this.session.off();
