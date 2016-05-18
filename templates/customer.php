@@ -60,18 +60,18 @@
         </footer>
     </div>
 
-    <div class="thankyou section" style="display:none;">
-        <header>
-            <img src="/css/logo.jpg"\>
-            <h1 class="" id="">Fine chiamata</h1>
-        </header>
-        <h2>Grazie!</h2>
-        <p>Lorem ipsum dixit!</p>
+        <div class="thankyou section">
+            <header>
+                <img src="/css/logo.jpg"\>
+                <h1 class="" id="">Fine chiamata</h1>
+            </header>
+            <h2>Grazie!</h2>
+            <p>Lorem ipsum dixit!</p>
+            
+            <footer>
+                    
+            </footer>
         </div>
-        <footer>
-                
-        </footer>
-    </div>
 
     </div>
 
