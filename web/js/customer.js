@@ -149,7 +149,7 @@
     this.$waitingHardwareAccess.hide();
     this.$waitingRepresentative.hide();
     this.$closeButton.off().text('Cancel');
-    this.$waitingStatusLog.off().text('Esperto in linea');
+    this.$waitingStatusLog.text('Esperto in linea');
 
     this.session.off();
     this.publisher.off();
@@ -239,7 +239,7 @@
           console.log('An internal error occurred. Try subscribing to this stream again.');
         }
       });
-      this.$closeButton.text('End');
+      //this.$closeButton.text('End');
       this.$waitingRepresentative.hide();
 
       // Invalidate queueId because if the representative arrived, that means customer has been
