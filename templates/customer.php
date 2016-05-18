@@ -22,11 +22,11 @@
                     <form role="form" class="request-form">
                         <div class="form-group">
                             <label for="customer-name" class="control-label">Il tuo nome:</label>
-                            <input type="text" class="form-control customer-name" name="customer_name" required="required">
+                            <input type="text" class="form-control customer-name" name="customer_name" required="required" value="Cliente">
                         </div>
                         <div class="form-group">
                             <label for="problem-text" class="control-label">Tell us about your problem:</label>
-                            <textarea class="form-control problem-text" name="problem_text" required="required"></textarea>
+                            <textarea class="form-control problem-text" name="problem_text" required="required" value="Problema"></textarea>
                         </div>
 
                     </form>
