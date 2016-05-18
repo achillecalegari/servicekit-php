@@ -69,7 +69,12 @@
     var validationRequirements = {
       '.customer-name': {
         maxLength: 50,
-        required: true}
+        required: true
+      },
+      '.problem-text': {
+        maxLength: 200,
+        required: true
+      }
     };
 
     var disableFields = function() {
@@ -254,7 +259,7 @@
     width: '100%',
     height: '100%',
     style: {
-      buttonDisplayMode: 'on'
+      buttonDisplayMode: 'off'
     }
   };
 
@@ -265,7 +270,6 @@
   // Hooks up the button on the page to interacting with the Service Request as well as initializing
   // and tearing down a Service Panel instance
   $(doc).ready(function() {
-
     $serviceRequestButton = $('.service-request-btn');
 
     serviceRequest.init('#service-request-modal', function(serviceSessionData) {

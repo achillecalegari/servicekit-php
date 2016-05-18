@@ -15,11 +15,11 @@
   "repository": "https://github.com/opentok/servicekit-php",
   "env": {
     "OPENTOK_KEY": {
-      "description": "45586362",
+      "description": "OpenTok API Key: Login to the TokBox Dashboard (https://dashboard.tokbox.com/keys) to get this value",
       "required": true
     },
     "OPENTOK_SECRET": {
-      "description": "7959f467731a7bf1ca0fb20bc956dab8baee1110",
+      "description": "OpenTok API Secret: Login to the TokBox Dashboard (https://dashboard.tokbox.com/keys) to get this value",
       "required": true
     },
     "SLIM_MODE": "production"
