@@ -166,8 +166,8 @@
       $("#service-panel").show();
       $(".representative").show();
       $("#service-panel footer").hide();
-
-      this.$waitingStatusLog.text('Grazie!');
+      $(".thankyou").hide();
+      $(".textstatus").text('Grazie!');
       }, 6000);
   };
 
