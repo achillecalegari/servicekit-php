@@ -104,7 +104,6 @@
     this.connected = false;
 
     this.$panel = $(selector);
-    this.$thankyoupanel = find('.thankyou');
     this.$publisher = this.$panel.find('.publisher');
     this.$subscriber = this.$panel.find('.subscriber');
     this.$waitingHardwareAccess = this.$panel.find('.waiting .hardware-access');
@@ -160,7 +159,7 @@
     }
 
     this.$panel.hide();
-    this.$thankyoupanel.css("display", "block");
+    $(".thankyou").show();
     console.log("Chiusa chiamata, grazie.")
     this.emit('close');
   };
