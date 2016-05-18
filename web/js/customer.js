@@ -28,9 +28,6 @@
       sessionDataCallback = callback;
 
       $form.submit(submit);
-      $modal.find('.request-submit').click(function() {
-        $form.submit();
-      });
       $modal.on('hidden.bs.modal', modalHidden);
     };
 
@@ -70,11 +67,7 @@
       '.customer-name': {
         maxLength: 50,
         required: true},
-      '.problem-text': {
-        maxLength: 200,
-        required: true
-
-      }
+      '.problem-text': 
     };
 
     var disableFields = function() {
@@ -271,25 +264,16 @@
   // and tearing down a Service Panel instance
   $(doc).ready(function() {
 
-    var pubOptions = {videoSource: null};
-
     $serviceRequestButton = $('.service-request-btn');
 
-    serviceRequest.init('#service-request-modal', function(serviceSessionData) {
+    $form.submit();
+
       // Initialize a Service Panel instance
       servicePanel = new ServicePanel('#service-panel', serviceSessionData);
 
       // Make sure the user cannot attempt to open another Service Panel
       servicePanel.on('open', disableServiceRequest);
 
-      // Make sure that the instance gets torn down and UI is renabled when the Service Panel is
-      // closed
-      servicePanel.on('close', function() {
-        enableServiceRequest();
-        servicePanel.removeAllListeners();
-        servicePanel = undefined;
-      });
-    });
   });
 
   // Page level helper methods
