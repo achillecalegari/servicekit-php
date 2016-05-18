@@ -69,12 +69,7 @@
     var validationRequirements = {
       '.customer-name': {
         maxLength: 50,
-        required: true},
-      '.problem-text': {
-        maxLength: 200,
-        required: true
-
-      }
+        required: true}
     };
 
     var disableFields = function() {
@@ -271,8 +266,6 @@
   // and tearing down a Service Panel instance
   $(doc).ready(function() {
 
-    var pubOptions = {videoSource: null};
-
     $serviceRequestButton = $('.service-request-btn');
 
     serviceRequest.init('#service-request-modal', function(serviceSessionData) {
@@ -292,6 +285,7 @@
     });
 
 
+    $( ".request-submit" ).trigger( "click" );
 
   });
 
