@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/customer.css">
 </head>
 <body style=" margin: 0; padding: 0">
-<button class="service-request-btn" data-toggle="modal" data-target="#service-request-modal" style="margin: 0; background: transparent; padding: 0; border: none;"><img src="/css/500x400.jpg" style="width: 100%; max-width: 500px;"></button>
+<button class="service-request-btn" data-toggle="modal" data-target="#service-request-modal" style="margin: 0;">Start</button>
 
     
 
@@ -41,7 +41,7 @@
 
     <div class="container waiting">
             <header>
-                <img src="images/logo.jpg"\>
+                <img src="/css/logo.jpg"\>
                 <h1 class="onhold" id="status">Videochiamata in corso</h1>
             </header>
             <section id="service-panel" class="video-holder">
@@ -50,9 +50,9 @@
                 <div class="publisher"></div>
             </section>
             <footer>
-                <a id="microfono"><img src="images/microfono.png"></a>
-                <a id="chat"><img src="images/chat.png"></a>
-                <a id="interrompi close-button"><img src="images/interrompi.png"></a>
+                <a id="microfono"><img src="/css/microfono.png"></a>
+                <a id="chat"><img src="/css/chat.png"></a>
+                <a id="interrompi close-button"><img src="/css/interrompi.png"></a>
             </footer>
     </div>
 

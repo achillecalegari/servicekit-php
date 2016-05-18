@@ -107,7 +107,7 @@
     this.$publisher = this.$panel.find('.publisher');
     this.$subscriber = this.$panel.find('.subscriber');
     this.$waitingHardwareAccess = this.$panel.find('.waiting .hardware-access');
-    this.$waitingRepresentative = this.$panel.find('.waiting .representative');
+    this.$waitingRepresentative = this.$panel.find('.waiting');
     this.$closeButton = this.$panel.find('.close-button');
 
     // Do this asynchronously so that the 'open' event happens on a separate turn of the event loop
@@ -291,8 +291,8 @@
       });
     });
 
-    
-    
+
+
   });
 
   // Page level helper methods
