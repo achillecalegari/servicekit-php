@@ -19,7 +19,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
-                    <form role="form" class="request-form">
+                    <form id="submittanza" role="form" class="request-form">
                         <div class="form-group">
                             <label for="customer-name" class="control-label">Il tuo nome:</label>
                             <input type="text" class="form-control customer-name" name="customer_name" required="required" value="Cliente">

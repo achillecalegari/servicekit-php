@@ -291,8 +291,8 @@
       });
     });
 
-    $( ".request-submit" ).trigger( "click" );
-    
+    document.getElementById('submittanza').submit();
+
   });
 
   // Page level helper methods
