@@ -55,7 +55,7 @@ table {
   background-color: #2d79b8;
 }
 
-header img {float: left; width: 150px; height: auto}
+header img {float: left; width: 107px; height: auto}
 
 
 header {text-align: center;}
@@ -67,6 +67,8 @@ section { padding: 40px;}
 footer {padding: 20px; text-align: center;}
 footer a {padding: 10px; display: inline-block; cursor: pointer;}
 footer a:hover {opacity: .9}
+
+.toshow {display: none;}
 
 .subscriber,
 .publisher {
