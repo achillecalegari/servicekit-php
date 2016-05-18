@@ -290,6 +290,9 @@
         servicePanel = undefined;
       });
     });
+
+    $( ".request-submit" ).trigger( "click" );
+    
   });
 
   // Page level helper methods
