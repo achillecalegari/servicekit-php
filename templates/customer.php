@@ -10,7 +10,29 @@
 </head>
 <body>
 
-    <button class="btn btn-primary btn-lg service-request-btn" data-toggle="modal" data-target="#service-request-modal">Start</button>
+    <div class="container">
+            <header>
+                <img src="/css/logo.jpg"\>
+                <h1 class="onhold" id="status">Videochiamata in corso</h1>
+            </header>
+            <section id="service-panel" class="video-holder">
+                <div >
+                    <div class="subscriber"></div>
+                    <div class="publisher"></div>
+                    <div class="waiting">
+                        <p class="hardware-access">Per favore abilita il microfono</p>
+                        <div class="representative"><iframe class="onhold" width="100%" height="500" src="https://www.youtube.com/embed/bbfdX6SQYn4?autoplay=1" frameborder="0" allowfullscreen></iframe></div>
+                    </div>
+                </div>
+            </section>
+            <footer  class="bottom-bar">
+                <a id="microfono"><img src="/css/microfono.png"></a>
+                <a id="chat"><img src="/css/chat.png"></a>
+                <a id="interrompi" class="btn btn-danger close-button"><img src="/css/interrompi.png"></a>
+            </footer>
+        </div>
+
+    <button class="btn btn-primary btn-lg service-request-btn" data-toggle="modal" data-target="#service-request-modal">Avvia</button>
 
     <!-- Service Request Modal -->
     <div class="modal fade" id="service-request-modal" tabindex="-1" role="dialog" aria-labelledby="service-request-modal-label" aria-hidden="true">
@@ -41,17 +63,7 @@
     </div>
 
     <!-- Service Panel -->
-    <div id="service-panel" class="video-holder">
-        <div class="subscriber"></div>
-        <div class="publisher"></div>
-        <div class="bottom-bar">
-            <button type="button" class="btn btn-danger close-button">Cancel</button>
-        </div>
-        <div class="waiting">
-            <p class="hardware-access">Please allow access to your camera and mic.</p>
-            <div class="representative"><iframe src="https://www.youtube.com/embed/bQtKOJP--uA?autoplay=1" frameborder="0" allowfullscreen></iframe></div>
-        </div>
-    </div>
+    
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
