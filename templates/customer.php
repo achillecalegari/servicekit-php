@@ -41,9 +41,9 @@
     </div>
 
     <!-- Service Panel -->
-    <section id="service-panel" class="video-holder">
+    <div id="service-panel" class="video-holder section">
         <header>
-            <img src="images/logo.jpg"\>
+            <img src="/css/logo.jpg"\>
             <h1 class="onhold" id="status">Videochiamata in corso</h1>
         </header>
         <div class="subscriber"></div>
@@ -56,11 +56,11 @@
             <div class="representative"><iframe src="https://www.youtube.com/embed/bQtKOJP--uA?autoplay=1" frameborder="0" allowfullscreen></iframe></div>
         </div>
         <footer>
-                <a id="microfono"><img src="images/microfono.png"></a>
-                <a id="chat"><img src="images/chat.png"></a>
-                <a id="interrompi"><img src="images/interrompi.png"></a>
+                <a id="microfono"><img src="/css/microfono.png"></a>
+                <a id="chat"><img src="/css/chat.png"></a>
+                <a id="interrompi"><img src="/css/interrompi.png"></a>
         </footer>
-    </section>
+    </div>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
