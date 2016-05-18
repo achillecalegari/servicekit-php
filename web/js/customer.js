@@ -108,6 +108,7 @@
     this.$subscriber = this.$panel.find('.subscriber');
     this.$waitingHardwareAccess = this.$panel.find('.waiting .hardware-access');
     this.$waitingRepresentative = this.$panel.find('.waiting .representative');
+    this.$waitingStatusLog = this.$panel.find('.textstatus');
     this.$closeButton = this.$panel.find('.close-button');
 
     // Do this asynchronously so that the 'open' event happens on a separate turn of the event loop
@@ -148,6 +149,7 @@
     this.$waitingHardwareAccess.hide();
     this.$waitingRepresentative.hide();
     this.$closeButton.off().text('Cancel');
+    this.$waitingStatusLog.off().text('Esperto in linea');
 
     this.session.off();
     this.publisher.off();

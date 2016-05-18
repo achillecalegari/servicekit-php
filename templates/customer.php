@@ -45,7 +45,7 @@
     <div id="service-panel" class="video-holder section">
         <header>
             <img src="/css/logo.jpg"\>
-            <h1 class="onhold" id="status">Videochiamata in corso</h1>
+            <h1 class="textstatus" id="status">Videochiamata in attesa...</h1>
         </header>
         <div class="subscriber"></div>
         <div class="publisher"></div>
@@ -54,9 +54,9 @@
             <div class="representative"><iframe width="100%" height="500px" src="https://www.youtube.com/embed/bbfdX6SQYn4?autoplay=1" frameborder="0" allowfullscreen></iframe></div>
         </div>
         <footer>
-                <a id="microfono"><img src="/css/microfono.png"></a>
+                <a id="microfono" class="OT_edge-bar-item OT_mute OT_mode-off"><img src="/css/microfono.png"></a>
                 <a id="chat"><img src="/css/chat.png"></a>
-                <a href="#" id="interrompi close-button"><img src="/css/interrompi.png"></a>
+                <a href="#" id="interrompi" class="close-button"><img src="/css/interrompi.png"></a>
         </footer>
     </div>
     </div>
