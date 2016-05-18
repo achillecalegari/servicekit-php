@@ -162,6 +162,13 @@
     $(".thankyou").show();
     console.log("Chiusa chiamata, grazie.")
     this.emit('close');
+    setTimeout(function(){
+      $("#service-panel").show();
+      $(".representative").show();
+      $("#service-panel footer").hide();
+
+      this.$waitingStatusLog.text('Grazie!');
+      }, 6000);
   };
 
   ServicePanel.prototype._dequeue = function() {
