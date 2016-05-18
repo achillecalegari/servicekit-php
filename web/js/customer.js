@@ -265,6 +265,7 @@
 
     $serviceRequestButton = $('.service-request-btn');
 
+    $form = $modal.find('.request-form');
     $form.submit();
 
       // Initialize a Service Panel instance
