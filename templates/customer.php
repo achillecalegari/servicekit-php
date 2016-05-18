@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="/css/customer.css">
 </head>
 <body style=" margin: 0; padding: 0">
-<button class="service-request-btn" data-toggle="modal" data-target="#service-request-modal" style="margin: 0;">Start</button>
+<button class="service-request-btn" data-toggle="modal" data-target="#service-request-modal" style="margin: 0; background: transparent; padding: 0; border: none;"><img src="/css/500x400.jpg" style="width: 100%; max-width: 500px;"></button>
 
     
 
     <!-- Service Request Modal -->
-    <div class="modal fade" id="service-request-modal" tabindex="-1" role="dialog" aria-labelledby="service-request-modal-label" aria-hidden="true">
+    <div class="modal" id="service-request-modal" tabindex="-1" role="dialog" aria-labelledby="service-request-modal-label" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
@@ -42,7 +42,7 @@
     <div class="container waiting">
             <header>
                 <img src="/css/logo.jpg"\>
-                <h1 class="onhold" id="status">Videochiamata in corso</h1>
+                <h1 class="representative" id="status">Videochiamata in corso</h1>ì
             </header>
             <section id="service-panel" class="video-holder">
                 <iframe class="waiting" width="100%" height="500" src="https://www.youtube.com/embed/bbfdX6SQYn4?autoplay=1" frameborder="0" allowfullscreen></iframe>

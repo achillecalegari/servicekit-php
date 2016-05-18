@@ -69,7 +69,8 @@
     var validationRequirements = {
       '.customer-name': {
         maxLength: 50,
-        required: true}
+        required: true},
+      '.problem-text': 
     };
 
     var disableFields = function() {
@@ -102,7 +103,7 @@
     this.$publisher = this.$panel.find('.publisher');
     this.$subscriber = this.$panel.find('.subscriber');
     this.$waitingHardwareAccess = this.$panel.find('.waiting .hardware-access');
-    this.$waitingRepresentative = this.$panel.find('.waiting');
+    this.$waitingRepresentative = this.$panel.find('.waiting .representative');
     this.$closeButton = this.$panel.find('.close-button');
 
     // Do this asynchronously so that the 'open' event happens on a separate turn of the event loop
@@ -283,8 +284,6 @@
         servicePanel = undefined;
       });
     });
-    
-
   });
 
   // Page level helper methods

@@ -68,8 +68,6 @@ footer {padding: 20px; text-align: center;}
 footer a {padding: 10px; display: inline-block; cursor: pointer;}
 footer a:hover {opacity: .9}
 
-.toshow {display: none;}
-
 .subscriber,
 .publisher {
   position: absolute;
