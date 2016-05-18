@@ -65,9 +65,10 @@
                 <img src="/css/logo.jpg"\>
                 <h1 class="" id="">Fine chiamata</h1>
             </header>
+            <div class="thankyoubody">
             <h2>Grazie!</h2>
             <p>Lorem ipsum dixit!</p>
-            
+            </div>
             <footer>
                     
             </footer>
