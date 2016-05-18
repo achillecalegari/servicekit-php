@@ -283,9 +283,7 @@
         servicePanel = undefined;
       });
     });
-
-
-    $( ".request-submit" ).trigger( "click" );
+    
 
   });
 
