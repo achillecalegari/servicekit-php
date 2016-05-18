@@ -160,7 +160,8 @@
     }
 
     this.$panel.hide();
-    this.$thankyoupanel.show();
+    this.$thankyoupanel.css("display", "block");
+    console.log("Chiusa chiamata, grazie.")
     this.emit('close');
   };
 
