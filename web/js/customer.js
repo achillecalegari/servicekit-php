@@ -166,6 +166,7 @@
       $("#service-panel").show();
       $(".representative").show();
       $("#service-panel footer").hide();
+      $(".waiting").css("padding-bottom", "40px");
       $(".thankyou").hide();
       $(".textstatus").text('Grazie!');
       }, 6000);
