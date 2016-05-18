@@ -19,75 +19,6 @@
   // Using a module pattern to encapsulate the functionality. The object returned at the end of this
   // function presents the API for using this module. It is a singleton and can be reused.
   var serviceRequest = (function() {
-    var $modal, $form, $fields, sessionDataCallback;
-
-    var init = function(modalSelector, callback) {
-      $modal = $(modalSelector);
-      $form = $modal.find('.request-form');
-      $fields = $form.find('input, textarea');
-      sessionDataCallback = callback;
-
-      $form.submit(submit);
-      $modal.find('.request-submit').click(function() {
-        $form.submit();
-      });
-      $modal.on('hidden.bs.modal', modalHidden);
-    };
-
-    var submit = function(event) {
-      var requestData = $fields.serialize();
-      event.preventDefault();
-
-      disableFields();
-
-      if (validateForm($form, validationRequirements) === false) {
-        enableFields();
-        return;
-      }
-
-      $.post('/help/session', requestData, 'json')
-        .done(function(data) {
-          sessionDataCallback({
-            apiKey: data.apiKey,
-            sessionId: data.sessionId,
-            token: data.token
-          });
-          $modal.modal('hide');
-        })
-        .fail(function() {
-          presentAlert('Request failed. Try again later.', 'danger', $form.parent(), false);
-        })
-        .always(function() {
-          enableFields();
-        });
-    };
-
-    var modalHidden = function() {
-      $form[0].reset();
-    };
-
-    var validationRequirements = {
-      '.customer-name': {
-        maxLength: 50,
-        required: true},
-      '.problem-text': {
-        maxLength: 200,
-        required: true
-
-      }
-    };
-
-    var disableFields = function() {
-      $fields.prop('disabled', true);
-    };
-
-    var enableFields = function() {
-      $fields.prop('disabled', false);
-    };
-
-    return {
-      init: init
-    };
   }());
 
 
@@ -271,27 +202,71 @@
   // and tearing down a Service Panel instance
   $(doc).ready(function() {
 
-    var pubOptions = {videoSource: null};
+    
+    var $modal, $form, $fields, sessionDataCallback;
 
-    $serviceRequestButton = $('.service-request-btn');
+    var init = function(modalSelector, callback) {
+      $modal = $(modalSelector);
+      $form = $modal.find('.request-form');
+      $fields = $form.find('input, textarea');
+      sessionDataCallback = callback;
 
-    serviceRequest.init('#service-request-modal', function(serviceSessionData) {
-      // Initialize a Service Panel instance
-      servicePanel = new ServicePanel('#service-panel', serviceSessionData);
-
-      // Make sure the user cannot attempt to open another Service Panel
-      servicePanel.on('open', disableServiceRequest);
-
-      // Make sure that the instance gets torn down and UI is renabled when the Service Panel is
-      // closed
-      servicePanel.on('close', function() {
-        enableServiceRequest();
-        servicePanel.removeAllListeners();
-        servicePanel = undefined;
+      $form.submit(submit);
+      $modal.find('.request-submit').click(function() {
+        $form.submit();
       });
-    });
+      $modal.on('hidden.bs.modal', modalHidden);
+    };
 
-    document.getElementById('submittanza').submit();
+    var submit = function(event) {
+      var requestData = $fields.serialize();
+      event.preventDefault();
+
+      disableFields();
+
+      if (validateForm($form, validationRequirements) === false) {
+        enableFields();
+        return;
+      }
+
+      $.post('/help/session', requestData, 'json')
+        .done(function(data) {
+          sessionDataCallback({
+            apiKey: data.apiKey,
+            sessionId: data.sessionId,
+            token: data.token
+          });
+          $modal.modal('hide');
+        })
+        .fail(function() {
+          presentAlert('Request failed. Try again later.', 'danger', $form.parent(), false);
+        })
+        .always(function() {
+          enableFields();
+        });
+    };
+
+    var modalHidden = function() {
+      $form[0].reset();
+    };
+
+    var validationRequirements = {
+      '.customer-name': {
+        maxLength: 50,
+        required: true}
+    };
+
+    var disableFields = function() {
+      $fields.prop('disabled', true);
+    };
+
+    var enableFields = function() {
+      $fields.prop('disabled', false);
+    };
+
+    return {
+      init: init
+    };
 
   });
 
