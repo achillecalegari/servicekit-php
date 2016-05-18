@@ -10,6 +10,8 @@
 </head>
 <body>
 
+    <div class="container">
+
     <button class="btn btn-primary btn-lg service-request-btn" data-toggle="modal" data-target="#service-request-modal">Start</button>
 
     <!-- Service Request Modal -->
@@ -70,5 +72,7 @@
     <script src="/js/vendor/eventemitter2.js"></script>
     <script src="/js/utils.js"></script>
     <script src="/js/customer.js"></script>
+
+    </div>
 </body>
 </html>
