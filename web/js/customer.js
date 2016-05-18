@@ -104,6 +104,7 @@
     this.connected = false;
 
     this.$panel = $(selector);
+    this.$thankyoupanel = this.$panel.find('.thankyou');
     this.$publisher = this.$panel.find('.publisher');
     this.$subscriber = this.$panel.find('.subscriber');
     this.$waitingHardwareAccess = this.$panel.find('.waiting .hardware-access');
@@ -159,6 +160,7 @@
     }
 
     this.$panel.hide();
+    this.$thankyoupanel.show();
     this.emit('close');
   };
 
@@ -241,6 +243,7 @@
       });
       //this.$closeButton.text('End');
       this.$waitingRepresentative.hide();
+      this.$waitingStatusLog.text('Esperto in linea');
 
       // Invalidate queueId because if the representative arrived, that means customer has been
       // dequeued

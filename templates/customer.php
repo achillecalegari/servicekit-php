@@ -59,6 +59,20 @@
                 <a href="#" id="interrompi" class="close-button"><img src="/css/interrompi.png"></a>
         </footer>
     </div>
+
+    <div class="thankyou section" style="display:none;">
+        <header>
+            <img src="/css/logo.jpg"\>
+            <h1 class="" id="">Fine chiamata</h1>
+        </header>
+        <h2>Grazie!</h2>
+        <p>Lorem ipsum dixit!</p>
+        </div>
+        <footer>
+                
+        </footer>
+    </div>
+
     </div>
 
     <div class="debug">
