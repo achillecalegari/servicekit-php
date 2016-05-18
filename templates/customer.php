@@ -12,7 +12,6 @@
 
     <div class="container">
 
-    <button class="btn btn-primary btn-lg service-request-btn" data-toggle="modal" data-target="#service-request-modal">Start</button>
 
     <!-- Service Request Modal -->
     <div class="modal fade" id="service-request-modal" tabindex="-1" role="dialog" aria-labelledby="service-request-modal-label" aria-hidden="true">
@@ -50,18 +49,20 @@
         </header>
         <div class="subscriber"></div>
         <div class="publisher"></div>
-        <div class="bottom-bar">
-            <button type="button" class="btn btn-danger close-button">Cancel</button>
-        </div>
         <div class="waiting">
             <p class="hardware-access">Please allow access to your camera and mic.</p>
-            <div class="representative"><iframe src="https://www.youtube.com/embed/bQtKOJP--uA?autoplay=1" frameborder="0" allowfullscreen></iframe></div>
+            <div class="representative"><iframe width="100%" height="500px" src="https://www.youtube.com/embed/bbfdX6SQYn4?autoplay=1" frameborder="0" allowfullscreen></iframe></div>
         </div>
         <footer>
                 <a id="microfono"><img src="/css/microfono.png"></a>
                 <a id="chat"><img src="/css/chat.png"></a>
-                <a id="interrompi"><img src="/css/interrompi.png"></a>
+                <a id="interrompi close-button"><img src="/css/interrompi.png"></a>
         </footer>
+    </div>
+    </div>
+
+    <div class="debug">
+        <button class="btn btn-primary btn-lg service-request-btn" data-toggle="modal" data-target="#service-request-modal">Start</button>
     </div>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
@@ -73,6 +74,5 @@
     <script src="/js/utils.js"></script>
     <script src="/js/customer.js"></script>
 
-    </div>
 </body>
 </html>
