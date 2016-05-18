@@ -66,8 +66,7 @@
     var validationRequirements = {
       '.customer-name': {
         maxLength: 50,
-        required: true},
-      '.problem-text': 
+        required: true}
     };
 
     var disableFields = function() {
