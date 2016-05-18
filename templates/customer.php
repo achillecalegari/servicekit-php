@@ -22,11 +22,7 @@
                     <form role="form" class="request-form">
                         <div class="form-group">
                             <label for="customer-name" class="control-label">Il tuo nome:</label>
-                            <input type="text" class="form-control customer-name" name="customer_name" required="required">
-                        </div>
-                        <div class="form-group">
-                            <label for="problem-text" class="control-label">Email:</label>
-                            <textarea class="form-control problem-text" name="problem_text" required="required"></textarea>
+                            <input type="text" class="form-control customer-name" name="customer_name" required="required" value="Cliente">
                         </div>
 
                     </form>
@@ -47,7 +43,7 @@
             <button type="button" class="btn btn-danger close-button">Cancel</button>
         </div>
         <div class="waiting">
-            <iframe src="https://www.youtube.com/embed/bQtKOJP--uA?autoplay=1" frameborder="0" allowfullscreen></iframe>
+        
         </div>
     </div>
 
