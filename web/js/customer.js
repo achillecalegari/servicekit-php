@@ -28,6 +28,9 @@
       sessionDataCallback = callback;
 
       $form.submit(submit);
+      $modal.find('.request-submit').click(function() {
+        $form.submit();
+      });
       $modal.on('hidden.bs.modal', modalHidden);
     };
 
@@ -263,15 +266,26 @@
   // and tearing down a Service Panel instance
   $(doc).ready(function() {
 
-    $( ".request-submit" ).trigger( "click" );
-
     $serviceRequestButton = $('.service-request-btn');
 
+    serviceRequest.init('#service-request-modal', function(serviceSessionData) {
       // Initialize a Service Panel instance
       servicePanel = new ServicePanel('#service-panel', serviceSessionData);
 
       // Make sure the user cannot attempt to open another Service Panel
       servicePanel.on('open', disableServiceRequest);
+
+      // Make sure that the instance gets torn down and UI is renabled when the Service Panel is
+      // closed
+      servicePanel.on('close', function() {
+        enableServiceRequest();
+        servicePanel.removeAllListeners();
+        servicePanel = undefined;
+      });
+    });
+
+
+    $( ".request-submit" ).trigger( "click" );
 
   });
 
