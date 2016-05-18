@@ -37,7 +37,6 @@
   bottom: 0;
   right: 0;
   margin: auto;
-  height: 1.3em;
   font-size: 1.3em;
   color: #fff;
 }
@@ -50,6 +49,10 @@
   max-width: 800px;
   margin: auto;
   background-color: #2d79b8;
+}
+
+.OT_subscriber {
+  min-height: 500px !important;
 }
 
 header img {float: left; width: 103px; height: auto}

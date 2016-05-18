@@ -18,7 +18,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">OpenTok Service Kit</a>
+          <a class="navbar-brand" href="#">Microsoft Expert Dashboard</a>
         </div>
       </div>
     </nav>
@@ -28,8 +28,8 @@
             <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <button type="button" class="btn btn-primary get-customer">Get Customer</button>
-                        <button type="button" class="btn btn-danger end-call">End Call</button>
+                        <button type="button" class="btn btn-primary get-customer">Accetta nuovo cliente</button>
+                        <button type="button" class="btn btn-danger end-call">Termina chiamata</button>
                     </div>
                 </div>
             </div>
@@ -65,12 +65,12 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="service-provider-login-modal-label">Representative Login</h4>
+                    <h4 class="modal-title" id="service-provider-login-modal-label">Login</h4>
                 </div>
                 <div class="modal-body">
                     <form role="form" class="login-form">
                         <div class="form-group">
-                            <label for="representative-name" class="control-label">Your Name:</label>
+                            <label for="representative-name" class="control-label">Nome:</label>
                             <input type="text" class="form-control representative-name" name="representative_name" required="required">
                         </div>
                     </form>
