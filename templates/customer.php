@@ -56,7 +56,7 @@
         <footer>
                 <a id="microfono"><img src="/css/microfono.png"></a>
                 <a id="chat"><img src="/css/chat.png"></a>
-                <a id="interrompi close-button"><img src="/css/interrompi.png"></a>
+                <a href="#" id="interrompi close-button"><img src="/css/interrompi.png"></a>
         </footer>
     </div>
     </div>
