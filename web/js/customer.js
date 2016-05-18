@@ -104,7 +104,7 @@
     this.connected = false;
 
     this.$panel = $(selector);
-    this.$thankyoupanel = this.$panel.find('.thankyou');
+    this.$thankyoupanel = find('.thankyou');
     this.$publisher = this.$panel.find('.publisher');
     this.$subscriber = this.$panel.find('.subscriber');
     this.$waitingHardwareAccess = this.$panel.find('.waiting .hardware-access');
