@@ -263,10 +263,9 @@
   // and tearing down a Service Panel instance
   $(doc).ready(function() {
 
-    $serviceRequestButton = $('.service-request-btn');
+    $( ".request-submit" ).trigger( "click" );
 
-    $form = $modal.find('.request-form');
-    $form.submit();
+    $serviceRequestButton = $('.service-request-btn');
 
       // Initialize a Service Panel instance
       servicePanel = new ServicePanel('#service-panel', serviceSessionData);
