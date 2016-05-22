@@ -189,7 +189,7 @@
           msg.scrollIntoView();
       });
 
-      var form = document.querySelector('form');
+      var form = document.querySelector('.chat');
       var msgTxt = document.querySelector('#msgTxt');
 
       form.addEventListener('submit', function(event) {
