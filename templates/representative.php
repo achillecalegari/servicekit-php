@@ -30,6 +30,9 @@
                     <div class="panel-body">
                         <button type="button" class="btn btn-primary get-customer">Accetta nuovo cliente</button>
                         <button type="button" class="btn btn-danger end-call">Termina chiamata</button>
+                        <button type="button" class="btn btn-danger block-call">Blocca chiamata</button>
+                        <button type="button" class="btn btn-primary start-session">Avvia livechat</button>
+                        <button type="button" class="btn btn-danger stop-session">Spegni livechat</button>
                     </div>
                 </div>
             </div>
@@ -58,6 +61,29 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="textchat">
+         <p id="history"></p>
+         <form class="chat">
+              <input type="text" placeholder="Input your text here" id="msgTxt"></input>
+         </form>
+    </div>
+
+        <div class="thankyou section">
+            <header>
+                <img src="/css/logo.jpg"\>
+                <h1 class="" id="">Fine chiamata</h1>
+            </header>
+            <div class="thankyoubody">
+            <h2>Grazie!</h2>
+            <p>Lorem ipsum dixit!</p>
+            </div>
+            <footer>
+                    
+            </footer>
+        </div>
+
     </div>
 
     <!-- Service Request Modal -->
