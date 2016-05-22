@@ -63,28 +63,13 @@
         </div>
     </div>
 
-    <div id="textchat">
-         <p id="history"></p>
-         <form class="chat">
-              <input type="text" placeholder="Input your text here" id="msgTxt"></input>
-         </form>
-    </div>
-
-        <div class="thankyou section">
-            <header>
-                <img src="/css/logo.jpg"\>
-                <h1 class="" id="">Fine chiamata</h1>
-            </header>
-            <div class="thankyoubody">
-            <h2>Grazie!</h2>
-            <p>Lorem ipsum dixit!</p>
-            </div>
-            <footer>
-                    
-            </footer>
+        <div id="textchat">
+             <p id="history"></p>
+             <form class="chat">
+                  <input type="text" placeholder="Input your text here" id="msgTxt"></input>
+             </form>
         </div>
 
-    </div>
 
     <!-- Service Request Modal -->
     <div class="modal fade" id="service-provider-login-modal" tabindex="-1" role="dialog" aria-labelledby="service-provider-login-modal-label" aria-hidden="true">

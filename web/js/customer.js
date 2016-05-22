@@ -276,35 +276,6 @@
     }
   };
 
-  // Receive a message and append it to the history
-  var msgHistory = document.querySelector('#history');
-  servicePanel.on('signal:msg', function(event) {
-    var msg = document.createElement('p');
-    msg.innerHTML = event.data;
-    msg.className = event.from.connectionId === session.connection.connectionId ? 'mine' : 'theirs';
-    msgHistory.appendChild(msg);
-    msg.scrollIntoView();
-  });
-
-
-// Text chat
-var form = document.querySelector('.chat');
-var msgTxt = document.querySelector('#msgTxt');
-
-// Send a signal once the user enters data in the form
-$('.chat').addEventListener('submit', function(event) {
-  event.preventDefault();
-
-  signal({
-      type: 'msg',
-      data: msgTxt.value
-    }, function(error) {
-      if (!error) {
-        msgTxt.value = '';
-      }
-    });
-});
-
 
 
   // Page level interactions
