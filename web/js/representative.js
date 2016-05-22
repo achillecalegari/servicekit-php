@@ -298,7 +298,7 @@ form.addEventListener('submit', function(event) {
 
   console.log("Invio tracciato");
 
-    serviceProviderLogin.session.signal({
+    session.signal({
           type: 'msg',
           data: msgTxt.value
         }, function(error) {
