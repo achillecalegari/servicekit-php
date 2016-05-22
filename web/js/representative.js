@@ -179,6 +179,16 @@
           console.log('Connecting to the session failed. Try connecting to this session again.');
         }
       });
+
+      var msgHistory = document.querySelector('#history');
+        session.on('signal:msg', function(event) {
+          var msg = document.createElement('p');
+          msg.innerHTML = event.data;
+          msg.className = event.from.connectionId === session.connection.connectionId ? 'mine' : 'theirs';
+          msgHistory.appendChild(msg);
+          msg.scrollIntoView();
+        });
+
     };
 
     var endCall = function() {
@@ -277,6 +287,25 @@
       serviceProvider.publisherConfig(),
       serviceProvider.start
     );
+
+    // Text chat
+var form = document.querySelector('form');
+var msgTxt = document.querySelector('#msgTxt');
+
+// Send a signal once the user enters data in the form
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+    session.signal({
+          type: 'msg',
+          data: msgTxt.value
+        }, function(error) {
+          if (!error) {
+            msgTxt.value = '';
+          }
+        });
+    });
+    
   });
 
 }(window, window.document, jQuery, _, setImmediate, window.setTimeout, window.presentAlert,
