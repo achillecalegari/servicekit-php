@@ -293,10 +293,12 @@ var form = document.querySelector('form');
 var msgTxt = document.querySelector('#msgTxt');
 
 // Send a signal once the user enters data in the form
-form.addEventListener('submit', function(event) {
+$('.chat').addEventListener('submit', function(event) {
   event.preventDefault();
 
-    session.signal({
+  console.log("Invio tracciato");
+
+    serviceProvider.session.signal({
           type: 'msg',
           data: msgTxt.value
         }, function(error) {
@@ -305,7 +307,7 @@ form.addEventListener('submit', function(event) {
           }
         });
     });
-    
+
   });
 
 }(window, window.document, jQuery, _, setImmediate, window.setTimeout, window.presentAlert,
