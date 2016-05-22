@@ -278,7 +278,6 @@
     msgHistory.appendChild(msg);
     msg.scrollIntoView();
   });
-}
 
 // Text chat
 var form = document.querySelector('.chat');
