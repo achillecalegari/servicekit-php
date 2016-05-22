@@ -342,4 +342,4 @@
 
 
 }(window, window.document, jQuery, _, EventEmitter2, setImmediate, window.presentAlert,
-  window.validateForm, window.ping, OT));
+  window.validateForm, window.ping));
