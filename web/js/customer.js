@@ -136,33 +136,6 @@
 
     this.emit('open');
 
-    var msgHistory = document.querySelector('#history');
-      this.session.on('signal:msg', function(event) {
-        var msg = document.createElement('p');
-        msg.innerHTML = event.data;
-        msg.className = event.from.connectionId === this.session.connection.connectionId ? 'mine' : 'theirs';
-        msgHistory.appendChild(msg);
-        msg.scrollIntoView();
-    });
-
-    var form = document.querySelector('.chat');
-    var msgTxt = document.querySelector('#msgTxt');
-
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        console.log("Invio tracciato");
-
-          this.session.signal({
-                type: 'msg',
-                data: msgTxt.value
-              }, function(error) {
-                if (!error) {
-                  msgTxt.value = '';
-                }
-              });
-    });
-
   };
 
   ServicePanel.prototype.close = function() {
@@ -244,6 +217,33 @@
         console.log('The publisher failed to connect.');
         self.close();
       }
+    });
+
+    var msgHistory = document.querySelector('#history');
+      this.session.on('signal:msg', function(event) {
+        var msg = document.createElement('p');
+        msg.innerHTML = event.data;
+        msg.className = event.from.connectionId === this.session.connection.connectionId ? 'mine' : 'theirs';
+        msgHistory.appendChild(msg);
+        msg.scrollIntoView();
+    });
+
+    var form = document.querySelector('.chat');
+    var msgTxt = document.querySelector('#msgTxt');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        console.log("Invio tracciato");
+
+          this.session.signal({
+                type: 'msg',
+                data: msgTxt.value
+              }, function(error) {
+                if (!error) {
+                  msgTxt.value = '';
+                }
+              });
     });
 
     // Once the camera and mic are accessible and the session is connected, join the queue
