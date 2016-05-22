@@ -189,6 +189,28 @@
           msg.scrollIntoView();
         });
 
+            // Text chat
+        var form = document.querySelector('form');
+        var msgTxt = document.querySelector('#msgTxt');
+
+                // Send a signal once the user enters data in the form
+        form.addEventListener('submit', function(event) {
+          event.preventDefault();
+
+          console.log("Invio tracciato");
+
+            session.signal({
+                  type: 'msg',
+                  data: msgTxt.value
+                }, function(error) {
+                  if (!error) {
+                    msgTxt.value = '';
+                  }
+                });
+            });
+
+          });
+
     };
 
     var endCall = function() {
@@ -288,27 +310,9 @@
       serviceProvider.start
     );
 
-    // Text chat
-var form = document.querySelector('form');
-var msgTxt = document.querySelector('#msgTxt');
 
-// Send a signal once the user enters data in the form
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
 
-  console.log("Invio tracciato");
 
-    session.signal({
-          type: 'msg',
-          data: msgTxt.value
-        }, function(error) {
-          if (!error) {
-            msgTxt.value = '';
-          }
-        });
-    });
-
-  });
 
 }(window, window.document, jQuery, _, setImmediate, window.setTimeout, window.presentAlert,
   window.validateForm, OT));
