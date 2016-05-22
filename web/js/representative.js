@@ -293,7 +293,7 @@ var form = document.querySelector('form');
 var msgTxt = document.querySelector('#msgTxt');
 
 // Send a signal once the user enters data in the form
-$('.chat').addEventListener('submit', function(event) {
+form.addEventListener('submit', function(event) {
   event.preventDefault();
 
   console.log("Invio tracciato");
