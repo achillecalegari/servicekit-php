@@ -255,10 +255,10 @@
       this.$waitingStatusLog.text('Esperto in linea');
 
       var msgHistory = document.querySelector('#history');
-        this.session.on('signal:msg', function(event) {
+        this.session.subscribe.on('signal:msg', function(event) {
           var msg = document.createElement('p');
           msg.innerHTML = event.data;
-          msg.className = event.from.connectionId === this.session.connection.connectionId ? 'mine' : 'theirs';
+          msg.className = event.from.connectionId === this.session.subscribe.connection.connectionId ? 'mine' : 'theirs';
           msgHistory.appendChild(msg);
           msg.scrollIntoView();
       });
@@ -271,7 +271,7 @@
 
           console.log("Invio tracciato");
 
-            this.session.signal({
+            this.session.subscribe.signal({
                   type: 'msg',
                   data: msgTxt.value
                 }, function(error) {
