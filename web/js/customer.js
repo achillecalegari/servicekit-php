@@ -278,14 +278,14 @@
 
   // Receive a message and append it to the history
   var msgHistory = document.querySelector('#history');
-  ServicePanel.prototype.session.on('signal:msg', function(event) {
+  servicePanel.on('signal:msg', function(event) {
     var msg = document.createElement('p');
     msg.innerHTML = event.data;
     msg.className = event.from.connectionId === session.connection.connectionId ? 'mine' : 'theirs';
     msgHistory.appendChild(msg);
     msg.scrollIntoView();
   });
-  
+
 
 // Text chat
 var form = document.querySelector('.chat');
@@ -295,7 +295,7 @@ var msgTxt = document.querySelector('#msgTxt');
 $('.chat').addEventListener('submit', function(event) {
   event.preventDefault();
 
-  ServicePanel.prototype.session.signal({
+  servicePanel.signal({
       type: 'msg',
       data: msgTxt.value
     }, function(error) {
