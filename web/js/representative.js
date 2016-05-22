@@ -187,14 +187,12 @@
           msg.className = event.from.connectionId === session.connection.connectionId ? 'mine' : 'theirs';
           msgHistory.appendChild(msg);
           msg.scrollIntoView();
-        });
+      });
 
-            // Text chat
-        var form = document.querySelector('form');
-        var msgTxt = document.querySelector('#msgTxt');
+      var form = document.querySelector('form');
+      var msgTxt = document.querySelector('#msgTxt');
 
-                // Send a signal once the user enters data in the form
-        form.addEventListener('submit', function(event) {
+      form.addEventListener('submit', function(event) {
           event.preventDefault();
 
           console.log("Invio tracciato");
@@ -209,7 +207,6 @@
                 });
             });
 
-          });
 
     };
 
@@ -309,9 +306,9 @@
       serviceProvider.publisherConfig(),
       serviceProvider.start
     );
+  });
 
-
-
+// Send a signal once the user enters data in the form
 
 
 }(window, window.document, jQuery, _, setImmediate, window.setTimeout, window.presentAlert,
