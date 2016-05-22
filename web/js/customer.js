@@ -295,7 +295,7 @@ var msgTxt = document.querySelector('#msgTxt');
 $('.chat').addEventListener('submit', function(event) {
   event.preventDefault();
 
-  servicePanel.signal({
+  signal({
       type: 'msg',
       data: msgTxt.value
     }, function(error) {

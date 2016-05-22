@@ -271,10 +271,10 @@
 
   // Receive a message and append it to the history
   var msgHistory = document.querySelector('#history');
-  session.on('signal:msg', function(event) {
+  serviceProvider.session.on('signal:msg', function(event) {
     var msg = document.createElement('p');
     msg.innerHTML = event.data;
-    msg.className = event.from.connectionId === session.connection.connectionId ? 'mine' : 'theirs';
+    msg.className = event.from.connectionId === serviceProvider.session.connection.connectionId ? 'mine' : 'theirs';
     msgHistory.appendChild(msg);
     msg.scrollIntoView();
   });
@@ -287,7 +287,7 @@ var msgTxt = document.querySelector('#msgTxt');
 $('.chat').addEventListener('submit', function(event) {
   event.preventDefault();
 
-  session.signal({
+  serviceProvider.session.signal({
       type: 'msg',
       data: msgTxt.value
     }, function(error) {
