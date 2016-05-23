@@ -315,7 +315,7 @@
     );
   });
 
-  $('.OT_subscriber .OT_video-element').click(function(){
+  $('.disable-video').click(function(){
     $('.OT_subscriber .OT_video-element').toggle();
   });
 
