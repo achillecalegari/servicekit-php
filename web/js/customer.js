@@ -224,7 +224,7 @@
           console.log("Ricevuto un messaggio");
           var msg = document.createElement('p');
           msg.innerHTML = event.data;
-          msg.className = event.from.connectionId === this.publisher.connection.connectionId ? 'mine' : 'theirs';
+          msg.className = event.from.connectionId === session.connection.connectionId ? 'mine' : 'theirs';
           msgHistory.appendChild(msg);
           msg.scrollIntoView();
       });
@@ -235,7 +235,7 @@
       form.addEventListener('submit', function(event) {
           event.preventDefault();
 
-          console.log("Input tracciato");
+          console.log("Input tracchiato");
 
             this.session.signal({
                   type: 'msg',
