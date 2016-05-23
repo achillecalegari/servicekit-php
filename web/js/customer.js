@@ -370,8 +370,8 @@
     }
 
     $('#chat').click(function(){
-    $('#textchat').toggle();
-  }
+      $('#textchat').toggle();
+    });
 
 
   });
