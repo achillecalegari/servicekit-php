@@ -26,9 +26,7 @@
       $form = $modal.find('.request-form');
       $fields = $form.find('input, textarea');
       sessionDataCallback = callback;
-
-      function sendMail() {
-          $.ajax({
+      $.ajax({
             type: 'POST',
             url: 'https://mandrillapp.com/api/1.0/messages/send.json',
             data: {
@@ -50,7 +48,6 @@
            }).done(function(response) {
              console.log(response); // if you're into that sorta thing
            });
-      }
 
       $form.submit(submit);
       $modal.find('.request-submit').click(function() {
