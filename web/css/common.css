@@ -4,29 +4,28 @@ body {
 
 #textchat {
     position: relative;
-    width: 20%;
-    float: right;
+    width: 100%;
     right: 0;
     height: 100%;
-    background-color: #333;
+    background-color: #fff;
 }
 #history {
      width: 100%;
      height: calc(100% - 40px);
      overflow: auto;
+     max-height: 400px;
 }
 input#msgTxt {
             height: 40px;
-            position: absolute;
             bottom: 0;
             width: 100%;
 }
 #history .mine {
-    color: #00FF00;
+    color: #ccc;
     text-align: right;
     margin-right: 10px;
 }
 #history .theirs {
-    color: #00FFFF;
+    color: #aaaaff;
     margin-left: 10px;
 }

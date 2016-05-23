@@ -28,11 +28,11 @@
             <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <button type="button" class="btn btn-primary get-customer">Accetta nuovo cliente</button>
+                        <button type="button" class="btn btn-primary get-customer">Accetta nuovo utente</button>
                         <button type="button" class="btn btn-danger end-call">Termina chiamata</button>
-                        <button type="button" class="btn btn-danger block-call">Blocca chiamata</button>
-                        <button type="button" class="btn btn-primary start-session">Avvia livechat</button>
-                        <button type="button" class="btn btn-danger stop-session">Spegni livechat</button>
+                        <button type="button" class="btn btn-danger block-call">Blocca utente</button>
+                        <button type="button" class="btn btn-danger stop-session" style="float:right;">Spegni livechat</button>
+                        <button type="button" class="btn btn-primary start-session" style="float:right;">Avvia livechat</button>
                     </div>
                 </div>
             </div>

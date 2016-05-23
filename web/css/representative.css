@@ -34,3 +34,7 @@
 .end-call {
   display: none;
 }
+
+#service-provider {
+  margin-top: 80px;
+}
