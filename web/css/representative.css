@@ -38,3 +38,8 @@
 #service-provider {
   margin-top: 80px;
 }
+
+#history .theirs:before {
+ content: "Cliente: ";
+ font-weight: bold;
+}

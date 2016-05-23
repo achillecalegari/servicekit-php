@@ -99,7 +99,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="//static.opentok.com/webrtc/v2.2/js/opentok.min.js"></script>
+    <script src="//static.opentok.com/v2/js/opentok.min.js"></script>
     <script src="/js/vendor/setImmediate.js"></script>
     <script src="/js/utils.js"></script>
     <script src="/js/representative.js"></script>
