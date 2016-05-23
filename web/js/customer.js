@@ -151,7 +151,6 @@
     this.$waitingRepresentative.hide();
     this.$closeButton.off().text('Cancel');
     this.$waitingStatusLog.text('Esperto in linea');
-    pauseVideo();
 
     this.session.off();
     this.publisher.off();
