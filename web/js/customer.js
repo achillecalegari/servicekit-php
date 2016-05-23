@@ -219,6 +219,33 @@
       }
     });
 
+      var msgHistory = document.querySelector('#history');
+      this.session.on('signal:msg', function(event) {
+          var msg = document.createElement('p');
+          msg.innerHTML = event.data;
+          msg.className = event.from.connectionId === this.session.connection.connectionId ? 'mine' : 'theirs';
+          msgHistory.appendChild(msg);
+          msg.scrollIntoView();
+      });
+
+      var form = document.querySelector('.chat');
+      var msgTxt = document.querySelector('#msgTxt');
+
+      form.addEventListener('submit', function(event) {
+          event.preventDefault();
+
+          console.log("Invio tracciato");
+
+            this.session.signal({
+                  type: 'msg',
+                  data: msgTxt.value
+                }, function(error) {
+                  if (!error) {
+                    msgTxt.value = '';
+                  }
+                });
+      });
+
     // Once the camera and mic are accessible and the session is connected, join the queue
     $.post('/help/queue', { 'session_id' : this.sessionId }, 'json')
       .done(function(data) {
@@ -253,33 +280,6 @@
       //this.$closeButton.text('End');
       this.$waitingRepresentative.hide();
       this.$waitingStatusLog.text('Esperto in linea');
-
-      var msgHistory = document.querySelector('#history');
-      this.subscriber.on('signal:msg', function(event) {
-          var msg = document.createElement('p');
-          msg.innerHTML = event.data;
-          msg.className = event.from.connectionId === this.subscriber.connection.connectionId ? 'mine' : 'theirs';
-          msgHistory.appendChild(msg);
-          msg.scrollIntoView();
-      });
-
-      var form = document.querySelector('.chat');
-      var msgTxt = document.querySelector('#msgTxt');
-
-      form.addEventListener('submit', function(event) {
-          event.preventDefault();
-
-          console.log("Invio tracciato");
-
-            this.subscriber.signal({
-                  type: 'msg',
-                  data: msgTxt.value
-                }, function(error) {
-                  if (!error) {
-                    msgTxt.value = '';
-                  }
-                });
-      });
 
       // Invalidate queueId because if the representative arrived, that means customer has been
       // dequeued
