@@ -343,14 +343,13 @@
 
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-    var isieEdge = (navigator.appName == "Netscape") && (navigator.appVersion.indexOf('Trident') === -1); // IE Edge
-    
 
-    if(isieEdge) {
+    if(userAgent.match( Edge\/\d+ )) {
       $(".modal").hide();
       $("#service-panel").hide();
       $(".edge").show();
       allowed = false;
+      console.log(allowed);
     }
 
     // Check if iOs
@@ -362,9 +361,11 @@
       $("#service-panel").hide();
       $(".ios").show();
       allowed = false;
+      console.log(allowed);
   }
 
-    if (allowed = true) {
+    if (allowed == true) {
+      console.log(allowed);
       $(".service-request-btn").click();
     }
 
