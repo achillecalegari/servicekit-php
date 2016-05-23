@@ -151,6 +151,7 @@
     this.$waitingRepresentative.hide();
     this.$closeButton.off().text('Cancel');
     this.$waitingStatusLog.text('Esperto in linea');
+    $('#advyt').stopVideo();
 
     this.session.off();
     this.publisher.off();
@@ -169,6 +170,7 @@
       $(".waiting").css("padding-bottom", "40px");
       $(".thankyou").hide();
       $(".textstatus").text('Grazie!');
+      $('#advyt').playVideo();
       }, 6000);
   };
 
@@ -282,6 +284,7 @@
       //this.$closeButton.text('End');
       this.$waitingRepresentative.hide();
       this.$waitingStatusLog.text('Esperto in linea');
+      $('#advyt').stopVideo();
 
       // Invalidate queueId because if the representative arrived, that means customer has been
       // dequeued
@@ -342,15 +345,6 @@
   var enableServiceRequest = function() {
     $serviceRequestButton.prop('disabled', false);
   };
-
-  function toggleVideo(state) {
-    // if state == 'hide', hide. Else: show video
-    var div = document.getElementById("popupVid");
-    var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
-    div.style.display = state == 'hide' ? 'none' : '';
-    func = state == 'hide' ? 'pauseVideo' : 'playVideo';
-    iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
-}
 
 
 }(window, window.document, jQuery, _, EventEmitter2, setImmediate, window.presentAlert,

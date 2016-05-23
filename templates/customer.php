@@ -51,7 +51,7 @@
         <div class="publisher"></div>
         <div class="waiting">
             <p class="hardware-access">Please allow access to your camera and mic.</p>
-            <div class="representative" id="popupVid"><iframe width="100%" height="500px" src="https://www.youtube.com/embed/bbfdX6SQYn4?autoplay=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe></div>
+            <div class="representative" id="popupVid"><iframe id="advyt" width="100%" height="500px" src="https://www.youtube.com/embed/bbfdX6SQYn4?autoplay=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe></div>
         </div>
         <footer>
                 <a id="microfono" class="OT_edge-bar-item OT_mute OT_mode-off"><img src="/css/microfono.png"></a>
