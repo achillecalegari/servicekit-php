@@ -19,13 +19,13 @@
 }
 
 .publisher {
-  bottom: 1em;
-  right: 1em;
-  width: 20%;
-  height: 10em;
-  z-index: 200;
-  border: 3px solid white;
-  border-radius: 3px;
+    width: 70%;
+    height: 70%;
+    z-index: 200;
+    border: 3px solid white;
+    border-radius: 3px;
+    top: 15%;
+    left: 15%;
 }
 
 .access-success,
@@ -45,5 +45,9 @@
 }
 
 .OT_subscriber .OT_video-element {
-  display: none;
+  display: none !important;
+}
+
+.OT_widget-container {
+  background-color: rgba(0, 184, 255, 0.85);
 }

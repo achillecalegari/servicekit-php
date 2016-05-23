@@ -26,11 +26,11 @@
                     <form role="form" class="request-form">
                         <div class="form-group">
                             <label for="customer-name" class="control-label">Nome:</label>
-                            <input type="text" class="form-control customer-name" name="customer_name" required="required" placeholder="Nome">
+                            <input type="text" class="form-control customer-name" name="customer_name" required="required" value="Nome">
                         </div>
                         <div class="form-group">
                             <label for="problem-text" class="control-label">Email:</label>
-                            <input type="text" class="form-control problem-text" name="problem_text" required="required" placeholder="email@email.it"></textarea>
+                            <input type="text" class="form-control problem-text" name="problem_text" required="required" value="email@email.it"></textarea>
                         </div>
                     </form>
                 </div>

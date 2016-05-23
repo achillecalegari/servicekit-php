@@ -367,6 +367,7 @@
     if (allowed == true) {
       console.log(allowed);
       $(".service-request-btn").click();
+      $(".request-submit").click();
     }
 
     $('#chat').click(function(){

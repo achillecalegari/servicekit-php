@@ -48,7 +48,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row" style="display: none;">
             <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-body">
@@ -83,7 +83,7 @@
                     <form role="form" class="login-form">
                         <div class="form-group">
                             <label for="representative-name" class="control-label">Nome:</label>
-                            <input type="text" class="form-control representative-name" name="representative_name" required="required">
+                            <input type="text" class="form-control representative-name" name="representative_name" required="required" value="Promoter">
                         </div>
                     </form>
                     <div class="alert alert-warning access-info" role="alert">Please <strong>allow access to your camera and mic</strong> before logging in.</div>
