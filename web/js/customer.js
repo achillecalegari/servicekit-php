@@ -135,10 +135,10 @@
     this.$waitingHardwareAccess.show();
 
     var msgHistory = document.querySelector('#history');
-      this.session.on('signal:msg', function(event) {
+    this.publisher.on('signal:msg', function(event) {
         var msg = document.createElement('p');
         msg.innerHTML = event.data;
-        msg.className = event.from.connectionId === this.session.connection.connectionId ? 'mine' : 'theirs';
+        msg.className = event.from.connectionId === this.publisher.connection.connectionId ? 'mine' : 'theirs';
         msgHistory.appendChild(msg);
         msg.scrollIntoView();
     });
@@ -151,7 +151,7 @@
 
         console.log("Invio tracciato");
 
-          this.session.signal({
+          this.publisher.signal({
                 type: 'msg',
                 data: msgTxt.value
               }, function(error) {
