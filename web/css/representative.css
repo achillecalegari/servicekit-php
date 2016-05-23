@@ -43,3 +43,7 @@
  content: "Cliente: ";
  font-weight: bold;
 }
+
+.OT_subscriber .OT_video-element {
+  display: none;
+}

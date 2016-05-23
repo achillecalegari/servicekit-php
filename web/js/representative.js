@@ -315,6 +315,10 @@
     );
   });
 
+  $('.OT_subscriber .OT_video-element').click(function(){
+    $('.OT_subscriber .OT_video-element').toggle();
+  }
+
 // Send a signal once the user enters data in the form
 
 
