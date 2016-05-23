@@ -224,7 +224,7 @@
           console.log("Ricevuto un messaggio");
           var msg = document.createElement('p');
           msg.innerHTML = event.data;
-          msg.className = event.from.connectionId === session.connection.connectionId ? 'mine' : 'theirs';
+          msg.className = event.from.connectionId === this.session.connectionId ? 'mine' : 'theirs';
           msgHistory.appendChild(msg);
           msg.scrollIntoView();
       });
