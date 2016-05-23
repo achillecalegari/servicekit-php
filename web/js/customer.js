@@ -224,10 +224,16 @@
           console.log("Ricevuto un messaggio");
           var msg = document.createElement('p');
           msg.innerHTML = event.data;
-          msg.className = event.from.connectionId === this.session.connectionId ? 'mine' : 'theirs';
+          console.log(event.data);
+          msg.className = event.from.connectionId === this.$publisher[0].connection.connectionId ? 'mine' : 'theirs';
           msgHistory.appendChild(msg);
           msg.scrollIntoView();
       });
+
+      console.log("This session "+this.session);
+      console.log("This publisher "+this.publisher);
+      console.log("This publisher connection"+this.publisher.connection);
+      console.log("This publisher array connection"+this.$publisher[0].connection);
 
       var form = document.querySelector('.chat');
       var msgTxt = document.querySelector('#msgTxt');
@@ -235,7 +241,7 @@
       form.addEventListener('submit', function(event) {
           event.preventDefault();
 
-          console.log("Input tracchiato");
+          console.log("Input tracciato");
 
             this.session.signal({
                   type: 'msg',
