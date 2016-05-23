@@ -337,6 +337,19 @@
         servicePanel = undefined;
       });
     });
+
+    // Check if Edge
+
+    var isieEdge = (navigator.appName == "Netscape") && (navigator.appVersion.indexOf('Trident') === -1); // IE Edge
+
+    if(isieEdge) {
+      stopVideo();
+      $(".modal").hide();
+      $("#service-panel").hide();
+      $(".edge").show();
+    }
+
+
   });
 
   // Page level helper methods

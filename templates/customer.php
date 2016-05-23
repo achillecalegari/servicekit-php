@@ -45,7 +45,7 @@
     <div id="service-panel" class="video-holder section">
         <header>
             <img src="/css/logo.jpg"\>
-            <h1 class="textstatus" id="status">Videochiamata in attesa...</h1>
+            <h1 class="textstatus" id="status">Attendere prego</h1>
         </header>
         <div class="subscriber"></div>
         <div class="publisher"></div>
@@ -68,6 +68,19 @@
             <div class="thankyoubody">
             <h2>Grazie!</h2>
             <p>Grazie per aver scoperto i prodotti Lumia con il nostro Expert!</p>
+            </div>
+            <footer>
+                    
+            </footer>
+        </div>
+
+        <div class="edge section">
+            <header>
+                <img src="/css/logo.jpg"\>
+                <h1 class="" id="">Avvia IE11</h1>
+            </header>
+            <div class="thankyoubody">
+            <p>Per usare la videochiamata in-browser, clicca l'icona delle Azioni di Microsoft Edge e scegli "Apri con Internet Explorer"</p>
             </div>
             <footer>
                     
