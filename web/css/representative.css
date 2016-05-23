@@ -49,5 +49,5 @@
 }
 
 .OT_widget-container {
-  background-color: rgba(0, 184, 255, 0.85);
+  background-color: rgba(0, 184, 255, 0.85) !important;
 }
