@@ -87,3 +87,12 @@ footer a:hover {opacity: .9}
  content: "Microsoft Expert: ";
  font-weight: bold;
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  .thankyoubody h2 {font-size: 36px;}
+
+}
