@@ -237,12 +237,14 @@
       var form = document.querySelector('.chat');
       var msgTxt = document.querySelector('#msgTxt');
 
+      var sessione = this.session;
+
       form.addEventListener('submit', function(event) {
           event.preventDefault();
 
           console.log("Input tracciato");
 
-            session.signal({
+            sessione.signal({
                   type: 'msg',
                   data: msgTxt.value
                 }, function(error) {
