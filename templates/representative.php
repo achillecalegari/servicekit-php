@@ -31,6 +31,7 @@
                         <button type="button" class="btn btn-primary get-customer">Accetta nuovo utente</button>
                         <button type="button" class="btn btn-danger end-call">Termina chiamata</button>
                         <button type="button" class="btn btn-danger block-call">Blocca utente</button>
+                        <button type="button" class="btn btn-primary get-customer">Disabilita video utenti</button>
                         <button type="button" class="btn btn-danger stop-session" style="float:right;">Spegni livechat</button>
                         <button type="button" class="btn btn-primary start-session" style="float:right;">Avvia livechat</button>
                     </div>

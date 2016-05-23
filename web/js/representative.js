@@ -192,21 +192,27 @@
       var form = document.querySelector('.chat');
       var msgTxt = document.querySelector('#msgTxt');
 
-      form.removeAllListeners();
-      form.addEventListener('submit', function(event) {
-          event.preventDefault();
+      var chataccesa = false;
 
-          console.log("Invio tracciato");
+      if (chataccesa == false) {
 
-            session.signal({
-                  type: 'msg',
-                  data: msgTxt.value
-                }, function(error) {
-                  if (!error) {
-                    msgTxt.value = '';
-                  }
-                });
-      });
+        chataccesa = true;
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            console.log("Invio tracciato");
+
+              session.signal({
+                    type: 'msg',
+                    data: msgTxt.value
+                  }, function(error) {
+                    if (!error) {
+                      msgTxt.value = '';
+                    }
+                  });
+        });
+
+      }
 
 
     };
