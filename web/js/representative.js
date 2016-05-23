@@ -192,7 +192,7 @@
       var form = document.querySelector('.chat');
       var msgTxt = document.querySelector('#msgTxt');
 
-      form.removeEventListener('submit');
+      form.removeAllListeners();
       form.addEventListener('submit', function(event) {
           event.preventDefault();
 

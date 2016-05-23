@@ -161,7 +161,6 @@
 
     this.$panel.hide();
     $(".thankyou").show();
-    console.log("Chiusa chiamata, grazie.")
     this.emit('close');
     setTimeout(function(){
       $("#service-panel").show();
@@ -225,14 +224,11 @@
           console.log("Ricevuto un messaggio");
           var msg = document.createElement('p');
           msg.innerHTML = event.data;
-          console.log(event.data);
           msg.className = event.from.connectionId === idconnessione ? 'mine' : 'theirs';
           msgHistory.appendChild(msg);
           msg.scrollIntoView();
       });
 
-      console.dir(this.session);
-      console.dir(this.publisher);
 
       var form = document.querySelector('.chat');
       var msgTxt = document.querySelector('#msgTxt');
@@ -241,8 +237,6 @@
 
       form.addEventListener('submit', function(event) {
           event.preventDefault();
-
-          console.log("Input tracciato");
 
             sessione.signal({
                   type: 'msg',
@@ -320,6 +314,7 @@
   // and tearing down a Service Panel instance
   $(doc).ready(function() {
     $serviceRequestButton = $('.service-request-btn');
+    $(".service-request-btn").click();
 
     serviceRequest.init('#service-request-modal', function(serviceSessionData) {
       // Initialize a Service Panel instance
