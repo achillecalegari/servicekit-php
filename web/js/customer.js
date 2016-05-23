@@ -344,8 +344,7 @@
 
     console.log(isieEdge);
 
-    if(isieEdge) {
-      stopVideo();
+    if(!isieEdge) {
       $(".modal").hide();
       $("#service-panel").hide();
       $(".edge").show();
@@ -356,7 +355,6 @@
   if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) )
   {
       console.log("iOs Alert");
-      stopVideo();
       $(".modal").hide();
       $("#service-panel").hide();
       $(".ios").show();
