@@ -340,6 +340,8 @@
 
     // Check if Edge
 
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
     var isieEdge = (navigator.appName == "Netscape") && (navigator.appVersion.indexOf('Trident') === -1); // IE Edge
 
     console.log(isieEdge);
