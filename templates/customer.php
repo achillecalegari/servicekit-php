@@ -83,7 +83,7 @@
 
     </div>
 
-    <div class="debug">
+    <div class="debug" style="display:none;">
         <button class="btn btn-primary btn-lg service-request-btn" data-toggle="modal" data-target="#service-request-modal">Start</button>
     </div>
 

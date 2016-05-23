@@ -54,7 +54,7 @@
                         <dl class="dl-horizontal customer-info">
                             <dt>Customer Name</dt>
                             <dd class="customer-name"></dd>
-                            <dt>Problem Description</dt>
+                            <dt>Email</dt>
                             <dd class="problem-text"></dd>
                         </dl>
                     </div>
