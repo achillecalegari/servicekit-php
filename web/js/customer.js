@@ -225,15 +225,14 @@
           var msg = document.createElement('p');
           msg.innerHTML = event.data;
           console.log(event.data);
-          msg.className = event.from.connectionId === this.$publisher[0].connection.connectionId ? 'mine' : 'theirs';
+          msg.className = event.from.connectionId === this.publisher.connection.connectionId ? 'mine' : 'theirs';
           msgHistory.appendChild(msg);
           msg.scrollIntoView();
       });
 
-      console.log("This session "+this.session);
-      console.log("This publisher "+this.publisher);
-      console.log("This publisher connection"+this.publisher.connection);
-      console.log("This publisher array connection"+this.$publisher[0].connection);
+      console.dir(this.session);
+      console.dir(session);
+      console.dir(this.publisher);
 
       var form = document.querySelector('.chat');
       var msgTxt = document.querySelector('#msgTxt');
@@ -243,7 +242,7 @@
 
           console.log("Input tracciato");
 
-            this.session.signal({
+            session.signal({
                   type: 'msg',
                   data: msgTxt.value
                 }, function(error) {
