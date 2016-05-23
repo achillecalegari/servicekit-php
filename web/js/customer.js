@@ -220,12 +220,13 @@
     });
 
       var msgHistory = document.querySelector('#history');
+      var idconnessione = this.session.connection.connectionId;
       this.session.on('signal:msg', function(event) {
           console.log("Ricevuto un messaggio");
           var msg = document.createElement('p');
           msg.innerHTML = event.data;
           console.log(event.data);
-          msg.className = event.from.connectionId === this.session.connection.connectionId ? 'mine' : 'theirs';
+          msg.className = event.from.connectionId === idconnessione ? 'mine' : 'theirs';
           msgHistory.appendChild(msg);
           msg.scrollIntoView();
       });
@@ -241,7 +242,7 @@
 
           console.log("Input tracciato");
 
-            this.session.signal({
+            session.signal({
                   type: 'msg',
                   data: msgTxt.value
                 }, function(error) {
