@@ -320,7 +320,6 @@
 
     $("#textchat").hide();
     $serviceRequestButton = $('.service-request-btn');
-    $(".service-request-btn").click();
 
     serviceRequest.init('#service-request-modal', function(serviceSessionData) {
       // Initialize a Service Panel instance
@@ -340,16 +339,18 @@
 
     // Check if Edge
 
+    var allowed = true;
+
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
     var isieEdge = (navigator.appName == "Netscape") && (navigator.appVersion.indexOf('Trident') === -1); // IE Edge
+    
 
-    console.log(isieEdge);
-
-    if(!isieEdge) {
+    if(isieEdge) {
       $(".modal").hide();
       $("#service-panel").hide();
       $(".edge").show();
+      allowed = false;
     }
 
     // Check if iOs
@@ -360,7 +361,12 @@
       $(".modal").hide();
       $("#service-panel").hide();
       $(".ios").show();
+      allowed = false;
   }
+
+    if (allowed = true) {
+      $(".service-request-btn").click();
+    }
 
 
   });
