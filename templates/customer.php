@@ -50,7 +50,7 @@
         <div class="subscriber"></div>
         <div class="publisher"></div>
         <div class="waiting">
-            <p class="hardware-access">Please allow access to your camera and mic.</p>
+            <p class="hardware-access">Per favore abilita videocamera e microfono dal tuo browser.</p>
             <div class="representative"><div id="player"></div></div>
         </div>
         <footer>
@@ -63,7 +63,7 @@
     <div id="textchat">
          <p id="history"></p>
          <form class="chat">
-              <input type="text" placeholder="Input your text here" id="msgTxt"></input>
+              <input type="text" placeholder="Scrivi qui (Premi Invio per inviare)" id="msgTxt"></input>
          </form>
     </div>
 
@@ -74,7 +74,7 @@
             </header>
             <div class="thankyoubody">
             <h2>Grazie!</h2>
-            <p>Lorem ipsum dixit!</p>
+            <p>Grazie per aver scoperto i prodotti Lumia con il nostro Expert!</p>
             </div>
             <footer>
                     

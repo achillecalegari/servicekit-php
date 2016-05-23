@@ -2,6 +2,10 @@ body {
   padding-bottom: 20px;
 }
 
+p {
+  font-size: 16px;
+}
+
 #textchat {
     position: relative;
     width: 100%;
@@ -14,6 +18,7 @@ body {
      height: calc(100% - 40px);
      overflow: auto;
      max-height: 400px;
+     padding-top: 20px;
 }
 input#msgTxt {
             height: 40px;
@@ -21,11 +26,17 @@ input#msgTxt {
             width: 100%;
 }
 #history .mine {
-    color: #ccc;
+    color: #999;
     text-align: right;
     margin-right: 10px;
 }
+
+#history .mine:before {
+  content: "Tu: ";
+ font-weight: bold;
+}
+
 #history .theirs {
-    color: #aaaaff;
+    color: #5294DC;
     margin-left: 10px;
 }
