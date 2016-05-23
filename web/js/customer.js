@@ -26,28 +26,6 @@
       $form = $modal.find('.request-form');
       $fields = $form.find('input, textarea');
       sessionDataCallback = callback;
-      $.ajax({
-            type: 'POST',
-            url: 'https://mandrillapp.com/api/1.0/messages/send.json',
-            data: {
-              'key': 'vBCSgesuFBSbDrUZe894Kw',
-              'message': {
-                'from_email': 'microsoft@therope.it',
-                'to': [
-                    {
-                      'email': 'achille.calegari@therope.it',
-                      'name': 'Achille',
-                      'type': 'to'
-                    }
-                  ],
-                'autotext': 'true',
-                'subject': 'Nuova chiamata',
-                'html': $fields
-              }
-            }
-           }).done(function(response) {
-             console.log(response); // if you're into that sorta thing
-           });
 
       $form.submit(submit);
       $modal.find('.request-submit').click(function() {
