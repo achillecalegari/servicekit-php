@@ -180,6 +180,10 @@
         }
       });
 
+      var firstlogin;
+
+      if (firstlogin != true) {
+
       var msgHistory = document.querySelector('#history');
         session.on('signal:msg', function(event) {
           var msg = document.createElement('p');
@@ -192,11 +196,7 @@
       var form = document.querySelector('.chat');
       var msgTxt = document.querySelector('#msgTxt');
 
-      var chataccesa = false;
-
-      if (chataccesa == false) {
-
-        chataccesa = true;
+        firstlogin = true;
         form.addEventListener('submit', function(event) {
             event.preventDefault();
 

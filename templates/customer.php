@@ -60,13 +60,6 @@
         </footer>
     </div>
 
-    <div id="textchat">
-         <p id="history"></p>
-         <form class="chat">
-              <input type="text" placeholder="Scrivi qui (Premi Invio per inviare)" id="msgTxt"></input>
-         </form>
-    </div>
-
         <div class="thankyou section">
             <header>
                 <img src="/css/logo.jpg"\>
@@ -80,6 +73,13 @@
                     
             </footer>
         </div>
+
+    <div id="textchat">
+         <p id="history"></p>
+         <form class="chat">
+              <input type="text" placeholder="Scrivi qui (Premi Invio per inviare)" id="msgTxt"></input>
+         </form>
+    </div>
 
     </div>
 

@@ -161,6 +161,7 @@
 
     this.$panel.hide();
     $(".thankyou").show();
+    $("#msgTxt").hide();
     this.emit('close');
     setTimeout(function(){
       $("#service-panel").show();
@@ -222,6 +223,7 @@
       var msgHistory = document.querySelector('#history');
       var idconnessione = this.session.connection.connectionId;
       this.session.on('signal:msg', function(event) {
+          $("#textchat").show();
           console.log("Ricevuto un messaggio");
           var msg = document.createElement('p');
           msg.innerHTML = event.data;
@@ -315,6 +317,8 @@
   // Hooks up the button on the page to interacting with the Service Request as well as initializing
   // and tearing down a Service Panel instance
   $(doc).ready(function() {
+
+    $("#textchat").hide();
     $serviceRequestButton = $('.service-request-btn');
     $(".service-request-btn").click();
 
