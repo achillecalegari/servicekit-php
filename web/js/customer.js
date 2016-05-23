@@ -369,6 +369,10 @@
       $(".service-request-btn").click();
     }
 
+    $('#chat').click(function(){
+    $('#textchat').toggle();
+  }
+
 
   });
 

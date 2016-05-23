@@ -55,7 +55,7 @@
             <div class="representative"><div id="player"></div></div>
         </div>
         <footer>
-                <a id="microfono" class="OT_edge-bar-item OT_mute OT_mode-off"><img src="/css/microfono.png"></a>
+                <a id="microfono" style="display:none" class="OT_edge-bar-item OT_mute OT_mode-off"><img src="/css/microfono.png"></a>
                 <a id="chat"><img src="/css/chat.png"></a>
                 <a href="#" id="interrompi" class="close-button"><img src="/css/interrompi.png"></a>
         </footer>
