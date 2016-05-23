@@ -225,13 +225,12 @@
           var msg = document.createElement('p');
           msg.innerHTML = event.data;
           console.log(event.data);
-          msg.className = event.from.connectionId === this.publisher.connection.connectionId ? 'mine' : 'theirs';
+          msg.className = event.from.connectionId === this.session.connection.connectionId ? 'mine' : 'theirs';
           msgHistory.appendChild(msg);
           msg.scrollIntoView();
       });
 
       console.dir(this.session);
-      console.dir(session);
       console.dir(this.publisher);
 
       var form = document.querySelector('.chat');
@@ -242,7 +241,7 @@
 
           console.log("Input tracciato");
 
-            session.signal({
+            this.session.signal({
                   type: 'msg',
                   data: msgTxt.value
                 }, function(error) {
