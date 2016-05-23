@@ -342,6 +342,8 @@
 
     var isieEdge = (navigator.appName == "Netscape") && (navigator.appVersion.indexOf('Trident') === -1); // IE Edge
 
+    console.log(isieEdge);
+
     if(isieEdge) {
       stopVideo();
       $(".modal").hide();
@@ -351,7 +353,9 @@
 
     // Check if iOs
 
-    if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+  if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) )
+  {
+      console.log("iOs Alert");
       stopVideo();
       $(".modal").hide();
       $("#service-panel").hide();
