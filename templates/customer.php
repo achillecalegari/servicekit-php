@@ -87,6 +87,19 @@
             </footer>
         </div>
 
+        <div class="ios section">
+            <header>
+                <img src="/css/logo.jpg"\>
+                <h1 class="" id="">iOs non supportato</h1>
+            </header>
+            <div class="thankyoubody">
+            <p>Purtroppo iOs non supporta lo standard WebRTC. Per usare questo servizio, logga sul sito di Expert da computer desktop Windows/Mac o da tablet Windows 10.</p>
+            </div>
+            <footer>
+                    
+            </footer>
+        </div>
+
     <div id="textchat">
          <p id="history"></p>
          <form class="chat">
@@ -113,7 +126,7 @@
       var player;
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-          height: '500',
+          height: 'auto',
           width: '100%',
           videoId: 'bbfdX6SQYn4',
           events: {

@@ -349,6 +349,15 @@
       $(".edge").show();
     }
 
+    // Check if iOs
+
+    if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+      stopVideo();
+      $(".modal").hide();
+      $("#service-panel").hide();
+      $(".ios").show();
+  }
+
 
   });
 
