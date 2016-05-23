@@ -104,8 +104,7 @@
           width: '100%',
           videoId: 'bbfdX6SQYn4',
           events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
+            'onReady': onPlayerReady
           }
         });
       }
@@ -114,6 +113,7 @@
       function onPlayerReady(event) {
         event.target.playVideo();
       }
+
 
       function stopVideo() {
         player.stopVideo();
