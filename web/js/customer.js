@@ -151,7 +151,7 @@
     this.$waitingRepresentative.hide();
     this.$closeButton.off().text('Cancel');
     this.$waitingStatusLog.text('Esperto in linea');
-    $('#advyt').pauseVideo();
+    pauseVideo();
 
     this.session.off();
     this.publisher.off();
@@ -170,7 +170,7 @@
       $(".waiting").css("padding-bottom", "40px");
       $(".thankyou").hide();
       $(".textstatus").text('Grazie!');
-      $('#advyt').playVideo();
+      playVideo();
       }, 6000);
   };
 
@@ -284,7 +284,7 @@
       //this.$closeButton.text('End');
       this.$waitingRepresentative.hide();
       this.$waitingStatusLog.text('Esperto in linea');
-      $('#advyt').pauseVideo();
+      pauseVideo();
 
       // Invalidate queueId because if the representative arrived, that means customer has been
       // dequeued
