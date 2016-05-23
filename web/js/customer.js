@@ -343,7 +343,7 @@
 
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-    if (/Edge\/12./i.test(navigator.userAgent)){
+    if (/Edge/i.test(navigator.userAgent)){
       $(".modal").hide();
       $("#service-panel").hide();
       $(".edge").show();
