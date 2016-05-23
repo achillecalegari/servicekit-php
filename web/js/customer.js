@@ -151,7 +151,7 @@
     this.$waitingRepresentative.hide();
     this.$closeButton.off().text('Cancel');
     this.$waitingStatusLog.text('Esperto in linea');
-    $('#advyt').stopVideo();
+    $('#advyt').pauseVideo();
 
     this.session.off();
     this.publisher.off();
@@ -284,7 +284,7 @@
       //this.$closeButton.text('End');
       this.$waitingRepresentative.hide();
       this.$waitingStatusLog.text('Esperto in linea');
-      $('#advyt').stopVideo();
+      $('#advyt').pauseVideo();
 
       // Invalidate queueId because if the representative arrived, that means customer has been
       // dequeued
