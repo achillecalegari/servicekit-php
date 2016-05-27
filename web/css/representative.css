@@ -55,19 +55,18 @@
 .get-customer {
     -webkit-animation: background 1s cubic-bezier(1,0,0,1) infinite !important;
   animation: background 1s cubic-bezier(1,0,0,1) infinite !important;  
-  color: white;
 }
 
 @-webkit-keyframes background {
-  0% { background-color: #2280c8  !important; }
-  33% { background-color: #0090ff  !important; }  
-  67% { background-color: #6facff  !important; }
-  100% { background-color: #bbd8ff  !important; }
+  0% { background-color: #2280c8 }
+  33% { background-color: #0090ff }  
+  67% { background-color: #6facff }
+  100% { background-color: #bbd8ff }
 }
 
 @keyframes background {
-  0% { background-color: #2280c8  !important; }
-  33% { background-color: #0090ff  !important; }  
-  67% { background-color: #6facff  !important; }
-  100% { background-color: #bbd8ff  !important; }
+  0% { background-color: #2280c8 }
+  33% { background-color: #0090ff }  
+  67% { background-color: #6facff }
+  100% { background-color: #bbd8ff }
 }
