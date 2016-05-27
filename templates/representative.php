@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="/css/representative.css">
 </head>
 <body>
-<?php if( isset( $_POST['pwd']) and !empty( $_POST['pwd']) and $_POST['pwd'] == 'expertrep'):?>
-
-       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -105,16 +103,6 @@
     <script src="/js/vendor/setImmediate.js"></script>
     <script src="/js/utils.js"></script>
     <script src="/js/representative.js"></script>
-
-
-<?php else: ?>
-
-    <form method="post">
-        <input type="text" name="pwd" />
-    </form>
-
-<?php endif; ?>
- 
 </body>
 </html>
 
