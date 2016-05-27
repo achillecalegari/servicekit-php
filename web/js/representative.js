@@ -321,7 +321,7 @@
 
   $('.stop-session').click(function(){
     $.ajax({
-      url: 'http://microsoft.therope.co/switch-chat.php',
+      url: 'https://microsoftswitch.herokuapp.com/switch-chat.php',
       type: 'GET',
       data: { action: 'off' }
     })
@@ -329,7 +329,7 @@
 
   $('.start-session').click(function(){
     $.ajax({
-      url: 'http://microsoft.therope.co/switch-chat.php',
+      url: 'https://microsoftswitch.herokuapp.com/switch-chat.php',
       type: 'GET',
       data: { action: 'on' }
     })

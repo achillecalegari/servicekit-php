@@ -379,7 +379,7 @@
 
   //Check if service is online
 
-  var offline = $.post( "//microsoft.therope.co/read-chat.php", {}, function ( data ) { if( data == "off"){ $('body').addClass('offline'); } } );
+  var offline = $.post( "https://microsoftswitch.herokuapp.com/read-chat.php", {}, function ( data ) { if( data == "off"){ $('body').addClass('offline'); } } );
 
 
 
