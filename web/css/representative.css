@@ -51,3 +51,22 @@
 .OT_widget-container {
   background-color: rgba(0, 184, 255, 0.85) !important;
 }
+
+.get-customer {
+    -webkit-animation: background 1s cubic-bezier(1,0,0,1) infinite;
+  animation: background 1s cubic-bezier(1,0,0,1) infinite;  
+}
+
+@-webkit-keyframes background {
+  0% { background-color: #2280c8; }
+  33% { background-color: #0090ff; }  
+  67% { background-color: #6facff; }
+  100% { background-color: #bbd8ff; }
+}
+
+@keyframes background {
+  0% { background-color: #2280c8; }
+  33% { background-color: #0090ff; }  
+  67% { background-color: #6facff; }
+  100% { background-color: #bbd8ff; }
+}
