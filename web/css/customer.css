@@ -98,6 +98,19 @@ footer a:hover {opacity: .9}
 .offline #service-panel .closed {display: block;}
 .offline #service-panel footer a {display: none;}
 
+.return {    
+  width: 100%;
+    text-align: center;}
+
+.return a {   margin-top: 50px;
+              display: inline-block;
+              background-color: #337ab7;
+              padding: 10px 20px;
+              color: white;
+              text-transform: uppercase;
+              font-size: 11px;
+              letter-spacing: 1px;}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 18px;

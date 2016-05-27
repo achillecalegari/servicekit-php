@@ -15,7 +15,7 @@
 
 
     <!-- Service Request Modal -->
-    <div class="modal fade" id="service-request-modal" tabindex="-1" role="dialog" aria-labelledby="service-request-modal-label" aria-hidden="true" style="display: none !important;">
+    <div class="modal fade" id="service-request-modal" tabindex="-1" role="dialog" aria-labelledby="service-request-modal-label" aria-hidden="true" style="display: none;">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -72,7 +72,6 @@
             <p>Grazie per aver scoperto i prodotti Lumia con il nostro Expert!</p>
             </div>
             <footer>
-                    
             </footer>
         </div>
 
@@ -113,6 +112,10 @@
 
     <div class="debug" style="display:none;">
         <button class="btn btn-primary btn-lg service-request-btn" data-toggle="modal" data-target="#service-request-modal">Start</button>
+    </div>
+
+    <div class="return">
+      <a href="http://www.expert.it/">Torna al sito Expert</a>
     </div>
 
     <script>
