@@ -47,6 +47,7 @@
         <header>
             <img src="/css/logo.jpg"\>
             <h1 class="textstatus" id="status">Attendere prego</h1>
+            <h1 class="textstatus closed">Esperti non in linea.</h1>
         </header>
         <div class="subscriber"></div>
         <div class="publisher"></div>

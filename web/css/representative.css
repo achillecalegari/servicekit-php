@@ -53,6 +53,7 @@
 }
 
 .get-customer {
+  
     -webkit-animation: background 1s cubic-bezier(1,0,0,1) infinite !important;
   animation: background 1s cubic-bezier(1,0,0,1) infinite !important;  
 }

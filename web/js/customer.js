@@ -364,6 +364,8 @@
       console.log(allowed);
   }
 
+
+
     if (allowed == true) {
       console.log(allowed);
       $(".service-request-btn").click();
@@ -373,6 +375,21 @@
     $('#chat').click(function(){
       $('#textchat').toggle();
     });
+
+
+  //Check if service is online
+
+  var offline = $.post( "http://microsoft.therope.co/read-chat.php", "", function result( data ) );
+
+  function result( data ){
+      console.log( data );
+  }
+
+     if(offline == "off") )
+  {
+      $('body').addClass('offline');
+  }
+
 
 
   });

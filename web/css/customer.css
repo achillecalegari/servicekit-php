@@ -90,6 +90,14 @@ footer a:hover {opacity: .9}
 
 #textchat {display: none;}
 
+#service-panel .closed {
+  display: none;
+}
+
+.offline #servicepanel #status {display: none !important;}
+.offline #service-panel .closed {display: block;}
+.offline #service-panel footer a {display: none;}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 18px;
