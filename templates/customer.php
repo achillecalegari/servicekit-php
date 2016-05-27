@@ -15,8 +15,8 @@
 
 
     <!-- Service Request Modal -->
-    <div class="modal fade" id="service-request-modal" tabindex="-1" role="dialog" aria-labelledby="service-request-modal-label" aria-hidden="true" style="display: none;">
-        <div class="modal-dialog">
+    <div class="modal" id="service-request-modal" tabindex="-1" role="dialog" aria-labelledby="service-request-modal-label" aria-hidden="true" style="display: none; opacity: 0 !important">
+        <div class="modal-dialog" style="opacity: 0 !important">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
