@@ -129,12 +129,14 @@
         player = new YT.Player('player', {
           height: '500px',
           width: '100%',
+          playerVars: 
+          {
+            listType:'playlist',
+            list: 'PL2kS0TmxuXAMOPf5XMpnzeUUBJI1MhkwO'
+          },
           events: {
             'onReady': onPlayerReady
           }
-
-          player.loadPlaylist(playlist:"PL2kS0TmxuXAMOPf5XMpnzeUUBJI1MhkwO");
-
         });
       }
 
