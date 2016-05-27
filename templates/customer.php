@@ -129,7 +129,8 @@
         player = new YT.Player('player', {
           height: '500px',
           width: '100%',
-          videoId: 'bbfdX6SQYn4',
+          list: 'PL2kS0TmxuXAMOPf5XMpnzeUUBJI1MhkwO',
+          listtype: 'playlist',
           events: {
             'onReady': onPlayerReady
           }
